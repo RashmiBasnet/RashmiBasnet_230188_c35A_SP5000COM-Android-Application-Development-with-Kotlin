@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "218340572848",
+    "firebase_url": "https://outfitternepal-d3fd7-default-rtdb.firebaseio.com",
+    "project_id": "outfitternepal-d3fd7",
+    "storage_bucket": "outfitternepal-d3fd7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:218340572848:android:0c4435aec551c6f9504575",
+        "android_client_info": {
+          "package_name": "com.example.outfitternepal"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmWaR5spVwjQ-W1YjtgvCiH4J29GLvjBM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
