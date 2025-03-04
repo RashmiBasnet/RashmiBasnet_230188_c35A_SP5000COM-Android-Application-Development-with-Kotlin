@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
+import com.example.outfitternepal.MainActivity
 import com.example.outfitternepal.R
 import com.example.outfitternepal.databinding.ActivityTripsBinding
 import com.example.outfitternepal.ui.activity.BookActivity
@@ -22,6 +23,21 @@ class TripsActivity : AppCompatActivity() {
         val bookNowBtn2: Button = findViewById(R.id.bookNowBtn2)
         bookNowBtn2.setOnClickListener {
             val intent = Intent(this, BookActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.home.setOnClickListener{
+            val intent = Intent(this@TripsActivity, MainActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.trips.setOnClickListener{
+            val intent = Intent(this@TripsActivity,TripsActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.guide.setOnClickListener{
+            val intent = Intent(this@TripsActivity, GuideActivity::class.java)
             startActivity(intent)
         }
 

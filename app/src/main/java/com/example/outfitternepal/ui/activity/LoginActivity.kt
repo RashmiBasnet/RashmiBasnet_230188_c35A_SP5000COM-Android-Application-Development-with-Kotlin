@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.outfitternepal.MainActivity
 import com.example.outfitternepal.databinding.ActivityLoginBinding
 import com.example.outfitternepal.repository.UserRepositoryImplementation
 
@@ -32,7 +33,7 @@ class LoginActivity : AppCompatActivity() {
                     if (isSuccess) {
                         Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show()
                         // Redirect to home screen
-                        startActivity(Intent(this, HomeActivity::class.java))
+                        startActivity(Intent(this, MainActivity::class.java))
                         finish() // Close the login activity to prevent going back
                     } else {
                         Toast.makeText(this, "Login failed: $message", Toast.LENGTH_SHORT).show()

@@ -7,6 +7,8 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.outfitternepal.databinding.ActivityMainBinding
 import com.example.outfitternepal.ui.activity.BookActivity
 import com.example.outfitternepal.ui.activity.ContactActivity
+import com.example.outfitternepal.ui.activity.GuideActivity
+import com.example.outfitternepal.ui.activity.HomeActivity
 import com.example.outfitternepal.ui.activity.TripsActivity
 
 class MainActivity : AppCompatActivity() {
@@ -40,5 +42,21 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, ContactActivity::class.java)
             startActivity(intent)
         }
+
+        binding.home.setOnClickListener{
+            val intent = Intent(this@MainActivity,MainActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.trips.setOnClickListener{
+            val intent = Intent(this@MainActivity,TripsActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.guide.setOnClickListener{
+            val intent = Intent(this@MainActivity, GuideActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }
